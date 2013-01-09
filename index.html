@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prison Yard Training</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+		<link href='js/fitvids.min.js'
+	</head>
+	<body>
+		<header>
+			<a href="#" id="homeLink">Prison Yard</a>
+			<nav>
+				<a href="#"><span id="subText">about</span>Facility</a>
+				<a href="#"><span id="subText">about</span>Trainers</a>
+				<a href="#"><span id="subText">about</span>Events</a>
+			</nav>
+		</header>
+		<div id="content">
+			<section id="billboard">
+				<h1>This isn't your mom's gym.</h1>
+				<div id="video">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/MejbOFk7H6c" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section id="moreInfo">
+				<div id="cost">
+					<h2>It costs $10 per session.</h2>
+					<span>Yeah, awesome, we know.</span>
+				</div>
+				<div id="trainerBook">
+					<h2>Are you a trainer?</h2>
+					<a href="#" class="button">Find out about booking &rarr;</a>
+				</div>
+			</section>
+		</div>
+		<footer>
+			&copy; Bandit Fitness Equipment
+		</footer>
+	</body>
+	<!-- scripts-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script>
+      $("#video").fitVids();
+    </script>
+</html>
