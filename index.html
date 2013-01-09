@@ -2,37 +2,44 @@
 <html>
 	<head>
 		<title>Prison Yard Training</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
-		<link href='js/fitvids.min.js'
+		<link href='js/fitvids.min.js' type="text/javascript">
+		
 	</head>
 	<body>
-		<header>
+		<div id="wrapper">
+		<header class="group">
 			<a href="#" id="homeLink">Prison Yard</a>
 			<nav>
-				<a href="#"><span id="subText">about</span>Facility</a>
-				<a href="#"><span id="subText">about</span>Trainers</a>
-				<a href="#"><span id="subText">about</span>Events</a>
+				<a href="#"><span id="subText">about the </span>Facility</a>
+				<a href="#"><span id="subText">about the </span>Trainers</a>
+				<a href="#"><span id="subText">about the </span>Events</a>
 			</nav>
 		</header>
 		<div id="content">
-			<section id="billboard">
-				<h1>This isn't your mom's gym.</h1>
+			<section id="billboard" class="group">
+				<h1>Not for the faint of heart.</h1>
 				<div id="video">
 					<iframe width="560" height="315" src="http://www.youtube.com/embed/MejbOFk7H6c" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</section>
-			<section id="moreInfo">
+			<section id="thenWhat">
+				<h1>Then what is it?</h1>
+				<p>It's a super-awesome training facility that gets back to the core purpose of training. You will find no fluff, no soft cushions, and no purple and green spin cycles. What you will find is pure training power in a focused environment. You don't come here to "see and be seen", you come here to train. That's it. No funny business.</p>
+			</section>
+			<section id="moreInfo" class="group">
 				<div id="cost">
-					<h2>It costs $10 per session.</h2>
-					<span>Yeah, awesome, we know.</span>
+					<h2>$10 per session. It's pretty awesome.</h2>
 				</div>
 				<div id="trainerBook">
-					<h2>Are you a trainer?</h2>
-					<a href="#" class="button">Find out about booking &rarr;</a>
+					<h2>Are you a trainer? Train your people here. <a href="#" class="">More Info &rarr;</a></h2>
+					
 				</div>
 			</section>
+		</div>
 		</div>
 		<footer>
 			&copy; Bandit Fitness Equipment
@@ -44,4 +51,15 @@
     <script>
       $("#video").fitVids();
     </script>
+    <!--hide address bar mobile safari -->
+    <script type="text/javascript">
+    	// When ready...
+		window.addEventListener("load",function() {
+		  // Set a timeout...
+		  setTimeout(function(){
+		    // Hide the address bar!
+		    window.scrollTo(0, 1);
+		  }, 0);
+		});
+	</script>
 </html>
