@@ -90,11 +90,76 @@
 				text-transform: uppercase;
 				border-top: 2px solid;
 			}
+			#mc_embed_signup {
+				background:transparent;  
+				position: relative;
+				height: auto;
+				width: 500px;
+				text-align: center;
+			}
+			#mc_embed_signup label {
+				text-align: center;
+				}
+			#mc_embed_signup input#mce-EMAIL.email {
+				background: white;
+				display: block;
+				border: none;
+				outline: none;
+				font-size: 20px;
+				line-height: 20px;
+				padding: 20px;
+				width: 300px;
+				margin: 0;
+				position: absolute;
+				left: 0;
+				border-top-left-radius: 30px;
+				border-bottom-left-radius: 30px;
+			}
+			#mc_embed_signup input#mc-embedded-subscribe.button {
+				position: absolute;
+				background: #c91b00;
+				display: block;
+				right: 0;
+				font-size: 20px;
+				line-height: 22px;
+				padding: 20px;
+				height: auto;
+				width: 160px;
+				margin: 0;
+				border-top-left-radius: 0px;
+				border-bottom-left-radius: 0px;
+				border-top-right-radius: 30px;
+				border-bottom-right-radius: 30px;
+				-webkit-transition: .1s ease-out;
+			}
+			#mc_embed_signup input#mc-embedded-subscribe.button:hover {
+				background-color: #f72200;
+			}
 			@media screen and (max-width: 580px) {
 				a.button {
 					width: 100%;
 					margin: 10px 0;
 					padding: 20px 0;
+				}
+				#mc_embed_signup {
+					width: 100%;
+				}
+				#mc_embed_signup input#mce-EMAIL.email {
+					position: relative;
+					width: 90%;
+					padding:  20px 5%;
+					border-radius: 0px;
+					border-top-left-radius: 30px;
+					border-top-right-radius: 30px;
+					margin: 0;	
+					text-align: center;
+				}
+				#mc_embed_signup input#mc-embedded-subscribe.button {
+					position: relative;
+					width: 100%;
+					border-radius: 0;
+					border-bottom-left-radius: 30px;
+					border-bottom-right-radius: 30px;
 				}
 			}
 		</style>
@@ -106,8 +171,19 @@
 			</div>
 			<p>Prison Yard training is part of the <a href="http://actualfitness.net">Actual Fitness Network</a>, a new project from <a href="http://banditfitness.com">Bandit Fitness Equipment</a>.</p>
 			<p>It's a no-nonsense, balls-to-the-wall training facility. Basically.</p>
+		
+		<a href="http://www.eventbrite.com/org/3138925742" class="button">See our upcoming events</a>
+		<a href="http://actualfitness.wufoo.com/forms/trainer-registration-form/" class="button">Register as a trainer</a>
+		<!-- Begin MailChimp Signup Form -->
+			<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+				<div id="mc_embed_signup">
+				<form action="http://banditfitness.us2.list-manage1.com/subscribe/post?u=53640169200df39be8e3cd2b5&amp;id=9df633e814" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<label for="mce-EMAIL">Stay updated with upcoming events and news:</label>
+					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="loser@out-of-shape.com" required>
+					<input type="submit" value="Update Me" name="subscribe" id="mc-embedded-subscribe" class="button">
+				</form>
+			</div>
+		<!--End mc_embed_signup-->
 		</div>
-		<a href="#" class="button">See our upcoming events</a>
-		<a href="#" class="button">Register as a trainer</a>
 	</body>
 </html>
