@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Prison Yard Training</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+		<link href='js/fitvids.min.js' type="text/javascript">
+		
+	</head>
+	<body>
+		<div id="wrapper">
+		<header class="group">
+			<a href="#" id="logo">Prison Yard <span>Fitness Training<span></a>
+			<nav>
+				<a href="facility"><span id="subText">about the </span>Facility</a>
+				<a href="trainers"><span id="subText">about the </span>Trainers</a>
+				<a href="events"><span id="subText">about the </span>Events</a>
+			</nav>
+		</header>
+		<div id="content">
+			<section id="billboard" class="group">
+				<h1>Not for the faint of heart</h1>
+				<div id="video">
+					<iframe width="560" height="315" src="http://www.youtube.com/embed/MejbOFk7H6c" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</section>
+			<section id="underBillboard">
+				<div id="banner">
+				<p>Actual Fitness Training without the fluff of the usual gym. <span style="color:red;">$10 a session.</span></p>
+				</div>
+				<h1>TRAIN HARD</h1>
+			</section>
+			<footer>
+			&copy; Bandit Fitness Equipment
+			</footer>
+		</div>
+		</div>
+		
+	</body>
+	<!-- scripts-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="js/jquery.fitvids.min.js"></script>
+    <script>
+      $("#video").fitVids();
+    </script>
+    <!--hide address bar mobile safari -->
+    <script type="text/javascript">
+    	// When ready...
+		window.addEventListener("load",function() {
+		  // Set a timeout...
+		  setTimeout(function(){
+		    // Hide the address bar!
+		    window.scrollTo(0, 1);
+		  }, 0);
+		});
+	</script>
+</html>

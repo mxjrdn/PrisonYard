@@ -4,62 +4,110 @@
 		<title>Prison Yard Training</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
-		<link href='js/fitvids.min.js' type="text/javascript">
-		
+		<style type="text/css">
+			html {
+				background-image: url(images/concrete_wall.png);
+				background-repeat: repeat;
+				background-position: center top;
+				background-color: #333;
+				text-align: center;
+				padding: 10% 5%;
+				font-family: 'Strait', sans-serif;
+				color: white;
+				font-size: 15px;
+				background-color: #111;
+				max-width: 1500px;
+				margin: 0 auto;
+			}
+			#wrapper {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+			h1 {
+				font-size: 2.5em;
+			}
+			h2 {
+				font-size: 2em;
+			}
+			h3 {
+				font-size: 1.5em;
+			}
+			h4 {
+				font-size: 1.25em;
+			}
+			h5, h6, p {
+				font-size: 1.2em;
+				line-height: 1.6em;
+			}
+			.group:after {
+				visibility: hidden;
+				display: block;
+				content: "";
+				clear: both;
+				height: 0;
+				}
+			* html .group             { zoom: 1; } /* IE6 */
+			*:first-child+html .group { zoom: 1; } /* IE7 */
+			a {
+				color: white;
+				text-decoration: none;
+				border-bottom: 1px solid;
+			}
+			a:hover {
+				background: red;
+			}
+			a.button {
+				background-color: #c91b00;
+				display: inline-block;
+				font-size: 20px;
+				padding: 20px;
+				margin: 20px 10px;
+				border: none;
+				border-radius: 30px;
+				-webkit-transition: .1s ease-out;
+			}
+			a.button:hover {
+				background-color: #f72200;
+			}
+			#prisonYard {
+				border: 2px solid white;
+				display: inline-block;
+				padding: 1% 3%;
+				margin: 5% 0;
+			}
+			h1#title {
+				font-size: 4em;
+				text-transform: uppercase;
+				line-height: 1em;
+				margin: 0;
+			}
+			h2#subtitle {
+				font-size: 2em;
+				color: #ccc;
+				line-height: 1em;
+				margin: 0;
+				text-transform: uppercase;
+				border-top: 2px solid;
+			}
+			@media screen and (max-width: 580px) {
+				a.button {
+					width: 100%;
+					margin: 10px 0;
+					padding: 20px 0;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div id="wrapper">
-		<header class="group">
-			<a href="#" id="homeLink">Prison Yard</a>
-			<nav>
-				<a href="#"><span id="subText">about the </span>Facility</a>
-				<a href="#"><span id="subText">about the </span>Trainers</a>
-				<a href="#"><span id="subText">about the </span>Events</a>
-			</nav>
-		</header>
-		<div id="content">
-			<section id="billboard" class="group">
-				<h1>Not for the faint of heart.</h1>
-				<div id="video">
-					<iframe width="560" height="315" src="http://www.youtube.com/embed/MejbOFk7H6c" frameborder="0" allowfullscreen></iframe>
-				</div>
-			</section>
-			<section id="thenWhat">
-				<h1>Then what is it?</h1>
-				<p>It's a super-awesome training facility that gets back to the core purpose of training. You will find no fluff, no soft cushions, and no purple and green spin cycles. What you will find is pure training power in a focused environment. You don't come here to "see and be seen", you come here to train. That's it. No funny business.</p>
-			</section>
-			<section id="moreInfo" class="group">
-				<div id="cost">
-					<h2>$10 per session. It's pretty awesome.</h2>
-				</div>
-				<div id="trainerBook">
-					<h2>Are you a trainer? Train your people here. <a href="#" class="">More Info &rarr;</a></h2>
-					
-				</div>
-			</section>
+			<div id="prisonYard">
+				<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
+			</div>
+			<p>Prison Yard training is part of the <a href="http://actualfitness.net">Actual Fitness Network</a>, a new project from <a href="http://banditfitness.com">Bandit Fitness Equipment</a>.</p>
+			<p>It's a no-nonsense, balls-to-the-wall training facility. Basically.</p>
 		</div>
-		</div>
-		<footer>
-			&copy; Bandit Fitness Equipment
-		</footer>
+		<a href="#" class="button">See our upcoming events</a>
+		<a href="#" class="button">Register as a trainer</a>
 	</body>
-	<!-- scripts-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <script src="js/jquery.fitvids.min.js"></script>
-    <script>
-      $("#video").fitVids();
-    </script>
-    <!--hide address bar mobile safari -->
-    <script type="text/javascript">
-    	// When ready...
-		window.addEventListener("load",function() {
-		  // Set a timeout...
-		  setTimeout(function(){
-		    // Hide the address bar!
-		    window.scrollTo(0, 1);
-		  }, 0);
-		});
-	</script>
 </html>
