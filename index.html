@@ -6,6 +6,10 @@
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
 		<style type="text/css">
+			/* let's clear some floats */
+			.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
+			.clearfix:after { clear: both; }  
+			.clearfix { zoom: 1; }  
 			html {
 				background-image: url(images/concrete_wall.png);
 				background-repeat: repeat;
@@ -93,7 +97,7 @@
 			#mc_embed_signup {
 				background:transparent;  
 				position: relative;
-				height: auto;
+				height: 250px;
 				width: 500px;
 				text-align: center;
 			}
@@ -169,14 +173,11 @@
 			<div id="prisonYard">
 				<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
 			</div>
-			<p>Prison Yard training is part of the <a href="http://actualfitness.net">Actual Fitness Network</a>, a new project from <a href="http://banditfitness.com">Bandit Fitness Equipment</a>.</p>
-			<p>It's a no-nonsense, balls-to-the-wall training facility. Basically.</p>
-		
-		<a href="http://www.eventbrite.com/org/3138925742" class="button">See our upcoming events</a>
-		<a href="http://actualfitness.wufoo.com/forms/trainer-registration-form/" class="button">Register as a trainer</a>
+			<p>We will have much more coming here soon. In the meantime, sign up for a class.</p>
+		<a href="http://prisonyard.wufoo.com/forms/m7x3z9/" class="button">Sign up for the next class. $10.</a>
 		<!-- Begin MailChimp Signup Form -->
 			<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-				<div id="mc_embed_signup">
+				<div id="mc_embed_signup" class="clearfix">
 				<form action="http://banditfitness.us2.list-manage1.com/subscribe/post?u=53640169200df39be8e3cd2b5&amp;id=9df633e814" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 					<label for="mce-EMAIL">Stay updated with upcoming events and news:</label>
 					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="loser@out-of-shape.com" required>
@@ -184,6 +185,7 @@
 				</form>
 			</div>
 		<!--End mc_embed_signup-->
+		<p>Prison Yard training is part of the <a href="http://actualfitness.net">Actual Fitness Network</a>, a new project from <a href="http://banditfitness.com">Bandit Fitness Equipment</a>.</p>
 		</div>
 	</body>
 </html>
