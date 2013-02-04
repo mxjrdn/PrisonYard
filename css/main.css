@@ -1,7 +1,8 @@
-/* let's clear some floats */
 .clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
 .clearfix:after { clear: both; }  
-.clearfix { zoom: 1; }  
+.clearfix { zoom: 1; } 
+
+ 
 html {
 	text-align: center;
 	padding: 0;
@@ -41,15 +42,6 @@ h5, h6, p {
 	font-size: 1.2em;
 	line-height: 1.6em;
 }
-.group:after {
-	visibility: hidden;
-	display: block;
-	content: "";
-	clear: both;
-	height: 0;
-	}
-* html .group             { zoom: 1; } /* IE6 */
-*:first-child+html .group { zoom: 1; } /* IE7 */
 a {
 	color: white;
 	text-decoration: none;
@@ -59,30 +51,35 @@ a:hover {
 	background: red;
 }
 
+
+
 .container {
-	margin: 0px 0px 50px;
-	box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	margin: 0px 0px 0px;
 	position: relative;
 	z-index: 2;
 }
 
 #billboard {
-	background: url(../images/bg..png);
-	background-size: cover;
 	height: auto;
 	padding: 0;
 	margin: 0;
+	min-height: 300px;
+	border-top: 5px solid #c91b00;
 }
 #billboard #videoWrapper {
 	width: 100%;
 	height: 100%;
 	position: relative;
 	max-height: 700px;
+	margin: 0;
+	padding: 0;
 }
 #billboard video {
-	background: #333;
+	background: #393939;
 	width: 100%;
+	max-width: 1500px;
 	height: auto;
+	min-height: 300px;
 	overflow: hidden;
 	z-index: -1000;
 	top: 0;
@@ -97,8 +94,9 @@ a:hover {
 	z-index: 1;
 	text-align: left;
 	margin: 50px;
-	bottom: 0;
+	bottom: 0px;
 	left: 0;
+	text-shadow: 0px 0px 14px rgba(0,0,0,.4);
 }
 h1#title {
 	font-size: 150px;
@@ -107,6 +105,7 @@ h1#title {
 	margin: 0 0 0px;
 	padding: 0;
 	background: rgba(0,0,0,.4);
+	
 }
 h2#subtitle {
 	display: ;
@@ -146,12 +145,10 @@ a.btn:hover {
 }
 
 #description {
-	background: white;
-	color: #333;
+	background: #393939;
+	color: whitesmoke;
 	padding: 50px 15%;
 	display: block;
-	border-top: 1px solid rgba(133,133,133,0.55);
-
 }
 
 #information {
@@ -161,7 +158,7 @@ a.btn:hover {
 	padding: 30px 5%;
 	border-top: 1px solid #ccc;
 }
-#three {
+.three {
 	width: 27%;
 	padding: 10px 3%;
 	margin: 30px 0;
@@ -171,8 +168,8 @@ a.btn:hover {
 	border-left: 1px solid #ccc;
 	border-right: 1px solid #ccc;
 }
-#three:first-child,
-#three:last-child {
+.three:first-child,
+.three:last-child {
 	border: none;
 }
 #two {
@@ -185,72 +182,66 @@ a.btn:hover {
 	background: white;
 	border-top: 1px solid #ccc;
 }
-#video {
-	width: 46%;
-	margin: 150px 2%;
-	float: left;
-	box-shadow: 0px 0px 4px rgba(0,0,0,.4);
-}
-#expectTextWrapper {
+
+#expect {
 	background: white;
 	color: #333;
-	width: 40%;
-	float: right;
 	padding: 50px 5%;
 	text-align: left;
 }
-
-
-#mc_embed_signup {
-	background:transparent;  
-	position: relative;
-	height: 250px;
-	width: 500px;
-	text-align: center;
-}
-#mc_embed_signup label {
-	text-align: center;
-	}
-#mc_embed_signup input#mce-EMAIL.email {
-	background: white;
-	display: block;
-	border: none;
-	outline: none;
-	font-size: 20px;
-	line-height: 20px;
-	padding: 20px;
-	width: 300px;
-	margin: 0;
-	position: absolute;
-	left: 0;
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
-}
-#mc_embed_signup input#mc-embedded-subscribe.button {
-	position: absolute;
-	background: #c91b00;
-	display: block;
-	right: 0;
-	font-size: 20px;
-	line-height: 22px;
-	padding: 20px;
-	height: auto;
-	width: 160px;
-	margin: 0;
-	border-top-left-radius: 0px;
-	border-bottom-left-radius: 0px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-	-webkit-transition: .1s ease-out;
-}
-#mc_embed_signup input#mc-embedded-subscribe.button:hover {
-	background-color: #f72200;
+footer {
+	padding: 50px;
 }
 @media screen and (max-width: 580px) {
-	a.button {
+	#prisonYard {
+		display: block;
+		position: relative;
 		width: 100%;
-		margin: 10px 0;
+		padding: 0;
+		margin: 0;
+	}
+	h1#title {
+		font-size: 40px;
+		text-transform: uppercase;
+		line-height:40px;
+		margin: 0;
+		padding: 2% 5%;
+		background: 
+		rgba(0,0,0,.4);
+	}
+	h2#subtitle {
+		display: ;
+		font-size: 20px;
+		color: white;
+		line-height: 20px;
+		margin: 0;
+		padding: 5%;
+		text-transform: uppercase;
+		background: rgba(0,0,0,.7);
+	}
+	#videoWrapper {
+	}
+	.wistia_embed {
+		display: block;
+		position: relative;
+		box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	}
+	#informationWrapper .three {
+		width: 90%;
+		float: none;
+		border: none;
+		border-bottom: 1px solid #ccc;
+		margin: 5%;
+		padding: 5% 0;
+	}
+	#informationWrapper .three:last-child {
+		border: none;
+	}
+	a.btn {
+		width: 100%;
+		margin: -60px 0 10px 0;
 		padding: 20px 0;
+		line-height: 1.2em;
 	}
 	#mc_embed_signup {
 		width: 100%;
