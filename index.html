@@ -4,178 +4,71 @@
 		<title>Prison Yard Training</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link href='http://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Strait' rel='stylesheet' type='text/css'>
 		<style type="text/css">
-			/* let's clear some floats */
-			.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }  
-			.clearfix:after { clear: both; }  
-			.clearfix { zoom: 1; }  
-			html {
-				background-image: url(images/concrete_wall.png);
-				background-repeat: repeat;
-				background-position: center top;
-				background-color: #333;
-				text-align: center;
-				padding: 10% 5%;
-				font-family: 'Strait', sans-serif;
-				color: white;
-				font-size: 15px;
-				background-color: #111;
-				max-width: 1500px;
-				margin: 0 auto;
-			}
-			#wrapper {
-				max-width: 500px;
-				margin: 0 auto;
-			}
-			h1 {
-				font-size: 2.5em;
-			}
-			h2 {
-				font-size: 2em;
-			}
-			h3 {
-				font-size: 1.5em;
-			}
-			h4 {
-				font-size: 1.25em;
-			}
-			h5, h6, p {
-				font-size: 1.2em;
-				line-height: 1.6em;
-			}
-			.group:after {
-				visibility: hidden;
-				display: block;
-				content: "";
-				clear: both;
-				height: 0;
-				}
-			* html .group             { zoom: 1; } /* IE6 */
-			*:first-child+html .group { zoom: 1; } /* IE7 */
-			a {
-				color: white;
-				text-decoration: none;
-				border-bottom: 1px solid;
-			}
-			a:hover {
-				background: red;
-			}
-			a.button {
-				background-color: #c91b00;
-				display: inline-block;
-				font-size: 20px;
-				padding: 20px;
-				margin: 20px 10px;
-				border: none;
-				border-radius: 30px;
-				-webkit-transition: .1s ease-out;
-			}
-			a.button:hover {
-				background-color: #f72200;
-			}
-			#prisonYard {
-				border: 2px solid white;
-				display: inline-block;
-				padding: 1% 3%;
-				margin: 5% 0;
-			}
-			h1#title {
-				font-size: 4em;
-				text-transform: uppercase;
-				line-height: 1em;
-				margin: 0;
-			}
-			h2#subtitle {
-				font-size: 2em;
-				color: #ccc;
-				line-height: 1em;
-				margin: 0;
-				text-transform: uppercase;
-				border-top: 2px solid;
-			}
-			#mc_embed_signup {
-				background:transparent;  
-				position: relative;
-				height: 250px;
-				width: 500px;
-				text-align: center;
-			}
-			#mc_embed_signup label {
-				text-align: center;
-				}
-			#mc_embed_signup input#mce-EMAIL.email {
-				background: white;
-				display: block;
-				border: none;
-				outline: none;
-				font-size: 20px;
-				line-height: 20px;
-				padding: 20px;
-				width: 300px;
-				margin: 0;
-				position: absolute;
-				left: 0;
-				border-top-left-radius: 30px;
-				border-bottom-left-radius: 30px;
-			}
-			#mc_embed_signup input#mc-embedded-subscribe.button {
-				position: absolute;
-				background: #c91b00;
-				display: block;
-				right: 0;
-				font-size: 20px;
-				line-height: 22px;
-				padding: 20px;
-				height: auto;
-				width: 160px;
-				margin: 0;
-				border-top-left-radius: 0px;
-				border-bottom-left-radius: 0px;
-				border-top-right-radius: 30px;
-				border-bottom-right-radius: 30px;
-				-webkit-transition: .1s ease-out;
-			}
-			#mc_embed_signup input#mc-embedded-subscribe.button:hover {
-				background-color: #f72200;
-			}
-			@media screen and (max-width: 580px) {
-				a.button {
-					width: 100%;
-					margin: 10px 0;
-					padding: 20px 0;
-				}
-				#mc_embed_signup {
-					width: 100%;
-				}
-				#mc_embed_signup input#mce-EMAIL.email {
-					position: relative;
-					width: 90%;
-					padding:  20px 5%;
-					border-radius: 0px;
-					border-top-left-radius: 30px;
-					border-top-right-radius: 30px;
-					margin: 0;	
-					text-align: center;
-				}
-				#mc_embed_signup input#mc-embedded-subscribe.button {
-					position: relative;
-					width: 100%;
-					border-radius: 0;
-					border-bottom-left-radius: 30px;
-					border-bottom-right-radius: 30px;
-				}
-			}
+			
 		</style>
 	</head>
 	<body>
-		<div id="wrapper">
-			<div id="prisonYard">
-				<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
-			</div>
-			<p>We will have much more coming here soon. In the meantime, sign up for a class.</p>
-		<a href="http://prisonyard.wufoo.com/forms/m7x3z9/" class="button">Sign up for the next class. $10.</a>
-		<!-- Begin MailChimp Signup Form -->
+		<section id="billboard">
+			
+				
+				<div id="videoWrapper">
+					<div id="prisonYard">
+						<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
+					</div>
+					<video autoplay loop>
+						<source src="billboard.m4v">
+					</video>
+				</div>
+			</section>
+			<div class="container">
+			<section id="description">
+				<p>Prison Yard Bootcamp is a focused fitness class in a focused facility. You come because you want to live the fitness lifestyle, and you're too awesome for a normal gym. And, let's not forget, the traditional gym sucks.</p>
+			</section>
+			<section id="information">
+				<div id="registerButtonWrapper">
+					<a href="http://prisonyard.wufoo.com/forms/m7x3z9/" class="btn">Sign up for the next class</a>
+				</div>
+				<div id="informationWrapper" class="clearfix">
+					<div id="three">
+						<h2>When</h2>
+						<p>Classes are (right now) <strong>Tuesdays</strong> and <strong>Thursdays</strong> at <strong>6pm</strong>. <br>50 mins each. </p>
+					</div>
+					<div id="three">
+						<h2>Where</h2>
+						<p>Behind <strong>Bandit Fitness Equipment</strong><br>1990 S. Belcher Road<br>Largo, FL 33771. </p>
+					</div>
+					<div id="three">
+						<h2>How Much</h2>
+						<p>It costs <strong>$10 a class</strong>, or <strong>$X monthly</strong>, for as many classes as you want. </p>
+					</div>
+				</div>
+			</section>
+			<section id="expect" class="clearfix">
+				<div id="video">
+					<iframe width="853" height="480" src="http://www.youtube.com/embed/9bZkp7q19f0?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div id="expectTextWrapper">
+					<h2>What to Expect</h2>
+						<p>The classes consist of a wide variety of exercises, from bodyweight routines to weight training. Each workout is different, and customized for the participants. </p>
+						<p>We have all kinds of fun stuff for workout stations. We have tires that need to be flipped, sledgehammers that need to be thrown, and a few other fun things (Did someone say sled?).</p>
+						<p>You're going to work out for the full 50 minutes. You're going to be breathing hard at the end. You might want to call your mommy. Some people call it hard. We call it progress. </p>
+						<p>We also log your progress. As long as you're coming to class, we will be keeping tabs on how you're doing. This is going to help us modify our workouts to best suit you. After all, fitness classes can't be a one-size-fits-all solution. </p>
+						<p>Whether you're just starting to work out, or you're a seasoned gym rat, don't worry. Class is for anyone who wants to live the fitness lifestyle. So, no matter what your starting point, you can still enjoy yourself and make progress.</p>
+				</div>
+			</section>
+		
+		
+		
+		
+		
+		
+		
+		<!-- Begin MailChimp Signup Form 
 			<link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
 				<div id="mc_embed_signup" class="clearfix">
 				<form action="http://banditfitness.us2.list-manage1.com/subscribe/post?u=53640169200df39be8e3cd2b5&amp;id=9df633e814" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -184,8 +77,21 @@
 					<input type="submit" value="Update Me" name="subscribe" id="mc-embedded-subscribe" class="button">
 				</form>
 			</div>
-		<!--End mc_embed_signup-->
+		End mc_embed_signup-
 		<p>Prison Yard training is part of the <a href="http://actualfitness.net">Actual Fitness Network</a>, a new project from <a href="http://banditfitness.com">Bandit Fitness Equipment</a>.</p>
 		</div>
+		-->
+		
+		
+		
+		
+		
 	</body>
+		<script src="js/jquery-1.9.0.min.js"></script>
+		<script src="js/jquery.fitvids.min.js"></script>
+		<script>
+		  $(document).ready(function(){
+		    $("#video").fitVids();
+		  });
+		</script>
 </html>
