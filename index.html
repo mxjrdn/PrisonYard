@@ -3,10 +3,12 @@
 	<head>
 		<title>Prison Yard Training</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css"
+      href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link href="http://get.pictos.cc/fonts/3800/1" rel="stylesheet" type="text/css">
 		
-
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Strait' rel='stylesheet' type='text/css'>
 		<style type="text/css">
 			
@@ -18,8 +20,16 @@
 				<div id="prisonYard">
 					<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
 				</div>
-				<iframe src="http://fast.wistia.net/embed/iframe/lcld9r73hd?autoPlay=true&endVideoBehavior=loop&fullscreenButton=false&playbar=false&playerColor=960000&smallPlayButton=false&version=v1&videoHeight=270&videoWidth=480&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="480" height="270"></iframe>
-				
+				<!--<iframe src="http://fast.wistia.net/embed/iframe/lcld9r73hd?autoPlay=true&endVideoBehavior=loop&fullscreenButton=false&playbar=false&playerColor=960000&smallPlayButton=false&version=v1&videoHeight=270&videoWidth=480&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="480" height="270"></iframe>-->
+				<div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf"
+				      class="flowplayer no-time no-volume no-mute"
+				      data-ratio="0.5625" data-embed="false" data-fullscreen="false" data-keyboard="false">
+				      <video poster="" loop="loop" autoplay>
+				         <source type="video/webm" src="video/billboard.webm"/>
+				         <source type="video/mp4" src="video/billboard.mp4"/>
+				         <source type="video/ogv" src="video/billboard.ogv"/>
+				      </video>
+				 </div>
 			</div>
 		</section>
 		<div class="container">
@@ -28,18 +38,21 @@
 			</section>
 			<section id="information">
 				<div id="registerButtonWrapper">
-					<a href="http://prisonyard.wufoo.com/forms/m7x3z9/" class="btn">Sign up for the next class</a>
+					<a href="//prisonyard.wufoo.com/forms/m7x3z9/" class="btn">Sign up for the next class</a>
 				</div>
 				<div id="informationWrapper" class="clearfix">
 					<div class="three">
+						<b data-icon="c">c</b>
 						<h2>When</h2>
 						<p>Classes are (right now) <strong>Tuesdays</strong> and <strong>Thursdays</strong> at <strong>6pm</strong>. <br>50 mins each. </p>
 					</div>
 					<div class="three">
+						<b class="icon">m</b>
 						<h2>Where</h2>
 						<p>Behind <strong>Bandit Fitness Equipment</strong><br>1990 S. Belcher Road<br>Largo, FL 33771. </p>
 					</div>
 					<div class="three">
+						<b class="icon">s</b>
 						<h2>How Much</h2>
 						<p>It costs <strong>$10 a class</strong>, or <strong>$X monthly</strong>, for as many classes as you want. </p>
 					</div>
@@ -59,4 +72,9 @@
 		</footer>
 	</body>
 	<script src="http://fast.wistia.com/static/iframe-api-v1.js"></script>
+	<!-- flowplayer depends on jQuery 1.7.1+ -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+   <!-- flowplayer javascript component -->
+   <script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
 </html>

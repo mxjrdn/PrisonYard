@@ -50,7 +50,10 @@ a {
 a:hover {
 	background: red;
 }
-
+.icon:before {
+    font-family: 'Pictos Custom';
+    -webkit-font-smoothing: antialiased;
+}
 
 
 .container {
@@ -66,27 +69,26 @@ a:hover {
 	min-height: 300px;
 	border-top: 5px solid #c91b00;
 }
-#billboard #videoWrapper {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	max-height: 700px;
-	margin: 0;
-	padding: 0;
+.flowplayer { 
+   	width: 100%; 
+   	background-color: #222;
+   	position: relative;
 }
-#billboard video {
-	background: #393939;
-	width: 100%;
-	max-width: 1500px;
-	height: auto;
-	min-height: 300px;
-	overflow: hidden;
-	z-index: -1000;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	position: relative;
+.flowplayer .fp-controls { 
+   background-color: rgba(0, 0, 0, 0.4);
+   display: none;
+}
+.flowplayer .fp-timeline { 
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+.flowplayer .fp-progress { 
+	background-color: rgba(219, 0, 0, 1);
+	display: none;
+}
+.flowplayer .fp-buffer { 
+	background-color: rgba(249, 249, 249, 1);
+	display: none;
 }
 #prisonYard {
 	display: block;
