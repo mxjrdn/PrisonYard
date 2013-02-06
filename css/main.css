@@ -50,9 +50,17 @@ a {
 a:hover {
 	background: red;
 }
-.icon:before {
+.icon {
     font-family: 'Pictos Custom';
     -webkit-font-smoothing: antialiased;
+    display: block;
+}
+[data-icon]:before {
+	font-family: 'Pictos Custom';
+	content: attr(data-icon);
+	font-size: 64px;
+	display: block;
+	margin: 10px;
 }
 
 
@@ -68,11 +76,13 @@ a:hover {
 	margin: 0;
 	min-height: 300px;
 	border-top: 5px solid #c91b00;
+	position: relative;
 }
 .flowplayer { 
    	width: 100%; 
    	background-color: #222;
    	position: relative;
+   	z-index: -9999;
 }
 .flowplayer .fp-controls { 
    background-color: rgba(0, 0, 0, 0.4);
@@ -174,10 +184,21 @@ a.btn:hover {
 .three:last-child {
 	border: none;
 }
-#two {
-	width: 50%;
-	float: left;
-	margin-bottom: 50px;
+#socialWrapper {
+	color: white;
+	height: auto;
+	float: none;
+	clear: both;
+	padding: 5px 20px;
+	margin: 0 auto;
+	width: intrinsic;
+}
+#socialWrapper a:hover {
+	background: none;
+	border:none;
+}
+.fb-like {
+	text-align: center;
 }
 
 #expect {
@@ -195,6 +216,12 @@ footer {
 	padding: 50px;
 }
 @media screen and (max-width: 580px) {
+	.flowplayer { 
+	   	width: 100%; 
+	   	background-color: #222;
+	   	position: relative;
+	   	z-index: 1;
+	}
 	#prisonYard {
 		display: block;
 		position: relative;
@@ -221,20 +248,30 @@ footer {
 		text-transform: uppercase;
 		background: rgba(0,0,0,.7);
 	}
-	#videoWrapper {
+	.icon {
+	    font-family: 'Pictos Custom';
+	    -webkit-font-smoothing: antialiased;
+	    display: block;
+	    float: left;
 	}
-	.wistia_embed {
-		display: block;
-		position: relative;
-		box-shadow: 0px 0px 4px rgba(0,0,0,.5);
+	[data-icon]:before {
+		font-family: 'Pictos Custom';
+		content: attr(data-icon);
+		font-size: 40px;
+		display: inline;
+		margin: 0 10px 0 0;
 	}
 	#informationWrapper .three {
 		width: 90%;
 		float: none;
 		border: none;
-		border-bottom: 1px solid #ccc;
-		margin: 5%;
-		padding: 5% 0;
+		text-align: left;
+		border:none;
+		margin:10% 0 20% 0;
+		padding: 0 0;
+	}
+	#informationWrapper .three h2 {
+		margin: 0;
 	}
 	#informationWrapper .three:last-child {
 		border: none;

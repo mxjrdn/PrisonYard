@@ -15,12 +15,19 @@
 		</style>
 	</head>
 	<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
 		<section id="billboard">
 			<div id="videoWrapper">
 				<div id="prisonYard">
 					<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
 				</div>
-				<!--<iframe src="http://fast.wistia.net/embed/iframe/lcld9r73hd?autoPlay=true&endVideoBehavior=loop&fullscreenButton=false&playbar=false&playerColor=960000&smallPlayButton=false&version=v1&videoHeight=270&videoWidth=480&videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" width="480" height="270"></iframe>-->
 				<div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf"
 				      class="flowplayer no-time no-volume no-mute"
 				      data-ratio="0.5625" data-embed="false" data-fullscreen="false" data-keyboard="false">
@@ -42,19 +49,22 @@
 				</div>
 				<div id="informationWrapper" class="clearfix">
 					<div class="three">
-						<b data-icon="c">c</b>
+						<b class="icon" data-icon="c"></b>
 						<h2>When</h2>
 						<p>Classes are (right now) <strong>Tuesdays</strong> and <strong>Thursdays</strong> at <strong>6pm</strong>. <br>50 mins each. </p>
 					</div>
 					<div class="three">
-						<b class="icon">m</b>
+						<b class="icon" data-icon="m"></b>
 						<h2>Where</h2>
 						<p>Behind <strong>Bandit Fitness Equipment</strong><br>1990 S. Belcher Road<br>Largo, FL 33771. </p>
 					</div>
 					<div class="three">
-						<b class="icon">s</b>
+						<b class="icon" data-icon="s"></b>
 						<h2>How Much</h2>
 						<p>It costs <strong>$10 a class</strong>, or <strong>$X monthly</strong>, for as many classes as you want. </p>
+					</div>
+					<div id="socialWrapper">
+						<div class="fb-like" data-href="https://www.facebook.com/pages/Prison-Yard-Bootcamp/416046051817247" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true"></div>
 					</div>
 				</div>
 			</section>
@@ -69,6 +79,7 @@
 		</div>
 		<footer>
 			<p>&copy; <a href="http://banditfitness.com">Bandit Fitness Equipment</a>. Part of the <a href="http://actualfitness.net">Actual Fitness Network</a>.</p>
+			<p><a href="https://www.facebook.com/pages/Prison-Yard-Bootcamp/416046051817247">Facebook</a> <a href="mailto:hello@prison-yard.com">Contact</a></p>
 		</footer>
 	</body>
 	<script src="http://fast.wistia.com/static/iframe-api-v1.js"></script>
