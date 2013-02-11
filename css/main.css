@@ -15,7 +15,7 @@ body {
 	background-image: url(../images/bg.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-attachment: scroll;
+	background-attachment: fixed;
 	background-position: top center;
 	padding: 50px 0;
 }
@@ -207,6 +207,14 @@ footer {
 	padding: 50px;
 }
 @media screen and (max-width: 580px) {
+	body {
+		background: none;
+		padding: 0;
+		margin: 0;
+	}
+	.wrapper {
+		margin: 0;
+	}
 	.flowplayer { 
 	   	width: 100%; 
 	   	background-color: #222;
@@ -214,36 +222,19 @@ footer {
 	   	z-index: 1;
 	}
 	#prisonYard {
-		display: block;
-		position: relative;
-		width: 100%;
-		padding: 0;
-		margin: 0;
+		margin: 5%;
 	}
 	h1#title {
-		font-size: 40px;
-		text-transform: uppercase;
-		line-height:40px;
-		margin: 0;
-		padding: 2% 5%;
-		background: 
-		rgba(0,0,0,.4);
+		
 	}
 	h2#subtitle {
-		display: ;
-		font-size: 20px;
-		color: white;
-		line-height: 20px;
-		margin: 0;
-		padding: 5%;
-		text-transform: uppercase;
-		background: rgba(0,0,0,.7);
+		
 	}
 	.icon {
 	    font-family: 'Pictos Custom';
 	    -webkit-font-smoothing: antialiased;
 	    display: block;
-	    float: left;
+	    float: none;
 	}
 	[data-icon]:before {
 		font-family: 'Pictos Custom';
@@ -252,45 +243,45 @@ footer {
 		display: inline;
 		margin: 0 10px 0 0;
 	}
-	#informationWrapper .three {
-		width: 90%;
-		float: none;
-		border: none;
-		text-align: left;
-		border:none;
-		margin:10% 0 20% 0;
-		padding: 0 0;
+	section {
+		padding: 5%;
 	}
-	#informationWrapper .three h2 {
-		margin: 0;
+	#tagline span { 
+		font-size: 3em;
 	}
-	#informationWrapper .three:last-child {
-		border: none;
+	#offer {
+		margin: 0 0 10px;
 	}
-	a.btn {
-		width: 100%;
-		margin: -60px 0 10px 0;
-		padding: 20px 0;
-		line-height: 1.2em;
+	span#days {
+		font-size: 2.5em;
 	}
-	#mc_embed_signup {
-		width: 100%;
+	span#times {
+		font-size: 1.5em;
 	}
-	#mc_embed_signup input#mce-EMAIL.email {
-		position: relative;
-		width: 90%;
-		padding:  20px 5%;
-		border-radius: 0px;
-		border-top-left-radius: 30px;
-		border-top-right-radius: 30px;
-		margin: 0;	
+	#where span {
 		text-align: center;
-	}
-	#mc_embed_signup input#mc-embedded-subscribe.button {
-		position: relative;
+		float: none;
+		display: block;
+		font-size: 1.5em;
 		width: 100%;
-		border-radius: 0;
-		border-bottom-left-radius: 30px;
-		border-bottom-right-radius: 30px;
+		margin: 50px 0;
+	}
+	#where iframe {
+		width: 100%;
+		float: none;
+		border: 1px solid #333;
+	}
+	#bring ul {
+		margin: 0;
+		padding: 0;
+	}
+	#bring ul li {
+		text-decoration: none;
+		font-size: 2em;
+		display: block;
+		padding: 20px;
+	}
+	#bring ul li .icon {
+		display: inline-block;
 	}
 }
