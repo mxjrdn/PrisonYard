@@ -2,86 +2,77 @@
 <html>
 	<head>
 		<title>Prison Yard Training</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css"
-      href="http://releases.flowplayer.org/5.3.2/skin/minimalist.css" />
+		<link rel="stylesheet" type="text/css" href="css/nivo-slider.css" media="screen" />
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link href="http://get.pictos.cc/fonts/3800/1" rel="stylesheet" type="text/css">
-		
+		<link rel="stylesheet" type="text/less" href="css/home.css">
+		<link rel="stylesheet" type="text/less" href="css/base.css">
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Strait' rel='stylesheet' type='text/css'>
-		<style type="text/css">
-			
-		</style>
 	</head>
-	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-		  var js, fjs = d.getElementsByTagName(s)[0];
-		  if (d.getElementById(id)) return;
-		  js = d.createElement(s); js.id = id;
-		  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-		  fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
-		<div class="wrapper">
-			<section id="prisonYard">
-				<h1 id="title">Prison Yard</h1><h2 id="subtitle">Bootcamp Training</h2>
-			</section>
-			<section id="videoWrapper">
-				<div id="tagline">
-					<span>Train Hard.<br>Be Awesome.</span>
-				</div>
-				<div data-swf="http://releases.flowplayer.org/5.3.2/flowplayer.swf"
-					      class="flowplayer no-time no-volume no-mute"
-					      data-ratio="0.5625" data-embed="false" data-fullscreen="false" data-keyboard="false">
-				    <video loop="loop">
-				        <source type="video/webm" src="video/billboard.webm"/>
-				        <source type="video/mp4" src="video/billboard.mp4"/>
-				        <source type="video/ogv" src="video/billboard.ogv"/>
-				    </video>
-				</div>
-			</section>
-			<section>
-				<div id="offer">
-					<span><b class="icon" data-icon="m"></b> Your first class is <b>free!</b></span>
-				</div>
-				<div>
-					<span>Classes cost $10 at the door after that.</span>
-				</div>
-			</section>
-			<section>
-				<span id="days"><b>Tuesdays &amp; Thursdays</b></span><span id="times">From <b>6:00pm</b> to <b>6:50pm</b>.</span>
-			</section>
-			<section id="where" class="clearfix">
-				<span><b class="icon" data-icon="w"></b> Behind <b>Bandit Fitness Equipment</b> on Belcher Road, just north of Ulmerton.<br> <a href="https://www.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Bandit+Fitness+Equipment,+1990+S.+Belcher+Rd.,+ClearwaterLargo,+FL&amp;aq=0&amp;oq=bandit&amp;sll=37.6,-95.665&amp;sspn=89.918965,69.960937&amp;ie=UTF8&amp;hq=Bandit+Fitness+Equipment,+1990+S.+Belcher+Rd.,+ClearwaterLargo,&amp;hnear=Florida&amp;t=m&amp;cid=10336680837989860496&amp;ll=27.909713,-82.742672&amp;spn=0.034131,0.036478&amp;z=14&amp;iwloc=A">View in Google Maps</a></span>
-				<iframe width="425" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Bandit+Fitness+Equipment,+1990+S.+Belcher+Rd.,+ClearwaterLargo,+FL&amp;aq=0&amp;oq=bandit&amp;sll=37.6,-95.665&amp;sspn=89.918965,69.960937&amp;ie=UTF8&amp;hq=Bandit+Fitness+Equipment,+1990+S.+Belcher+Rd.,+ClearwaterLargo,&amp;hnear=Florida&amp;t=m&amp;cid=10336680837989860496&amp;ll=27.909713,-82.742672&amp;spn=0.034131,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
-			</section>
-			<section id="bring">
-				<h1>What you should bring:</h1>
-				<ul>
-					<li><b class="icon" data-icon="c"></b> Water</li>
-					<li><b class="icon" data-icon="c"></b> Towel</l1>
-					<li><b class="icon" data-icon="c"></b> A friend</li>
-				</ul>
-			</section>
-			<section id="expect" class="clearfix">
-				<h2>What to Expect</h2>
-					<p>The classes consist of a wide variety of exercises, from bodyweight routines to weight training. Each workout is different, and customized for the participants. </p>
-					<p>We have all kinds of fun stuff for workout stations. We have tires that need to be flipped, sledgehammers that need to be thrown, and a few other fun things (Did someone say sled?).</p>
-					<p>You're going to work out for the full 50 minutes. You're going to be breathing hard at the end. You might want to call your mommy. Some people call it hard. We call it progress. </p>
-					<p>We also log your progress. As long as you're coming to prison camp, we will be keeping tabs on how you're doing. This is going to help us modify our workouts to best suit you. After all, fitness classes can't be a one-size-fits-all solution. </p>
-					<p>Whether you're just starting to work out, or you're a seasoned gym rat, don't worry. Class is for anyone who wants to live the fitness lifestyle. So, no matter what your starting point, you can still enjoy yourself and make progress.</p>
-			</section>
+	<body id="homepage">
+		<header>
+			<a href="http://prison-yard.com" id="logo">Prison Yard <span>Fitness Bootcamp</span></a>
+			<nav class="clearfix">
+				<a href="about">About</a>
+				<a href="wardens">Wardens</a>
+				<a href="calendar">Calendar</a>
+				<a href="pricing">Pricing</a>
+				<a href="contact">Contact</a>
+			</nav>
+		</header>
+		<div id="billboard">
+			<h1 id="tagline">Free<br>Yourself</h1>
 		</div>
-		<footer>
-			<p>&copy; <a href="http://banditfitness.com">Bandit Fitness Equipment</a>. Part of the <a href="http://actualfitness.net">Actual Fitness Network</a>.</p>
-			<p><a href="https://www.facebook.com/pages/Prison-Yard-Bootcamp/416046051817247">Facebook</a> <a href="mailto:hello@prison-yard.com">Contact</a></p>
-		</footer>
-	</body>
-	<script src="http://fast.wistia.com/static/iframe-api-v1.js"></script>
-	<!-- flowplayer depends on jQuery 1.7.1+ -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-
-   <!-- flowplayer javascript component -->
-   <script src="http://releases.flowplayer.org/5.3.2/flowplayer.min.js"></script>
+		<div class="content">
+			<section id="description">
+				<h1>Get ready.</h1>
+				<p>Prison Yard Fitness Bootcamp is a focused fitness class in a focused facility behind <a href="http://banditfitness.com">Bandit Fitness Equipment</a>. It's all about fitness and the fitness lifestyle, and there's no fluff. Whatever your reason and wherever you start from, we've got a place for you. </p>
+			</section>
+			<footer>
+				&copy; 2013 Bandit Fitness Equipment.
+			</footer>
+		</div>
+	</body>		   
+	<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" src="js/less.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+	<script type="text/javascript">
+		$(window).load(function() {
+		    $('#slideshow').nivoSlider({
+		        effect: 'random', // Specify sets like: 'fold,fade,sliceDown'
+		        slices: 15, // For slice animations
+		        boxCols: 8, // For box animations
+		        boxRows: 4, // For box animations
+		        animSpeed: 500, // Slide transition speed
+		        pauseTime: 3000, // How long each slide will show
+		        startSlide: 0, // Set starting Slide (0 index)
+		        directionNav: false, // Next & Prev navigation
+		        controlNav: false, // 1,2,3... navigation
+		        controlNavThumbs: false, // Use thumbnails for Control Nav
+		        pauseOnHover: false, // Stop animation while hovering
+		        manualAdvance: false, // Force manual transitions
+		        prevText: 'Prev', // Prev directionNav text
+		        nextText: 'Next', // Next directionNav text
+		        randomStart: false, // Start on a random slide
+		        beforeChange: function(){}, // Triggers before a slide transition
+		        afterChange: function(){}, // Triggers after a slide transition
+		        slideshowEnd: function(){}, // Triggers after all slides have been shown
+		        lastSlide: function(){}, // Triggers when last slide is shown
+		        afterLoad: function(){} // Triggers when slider has loaded
+		    });
+		});
+</script>
+   <!-- Google Analytics -->
+   <script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-461043-8']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
 </html>

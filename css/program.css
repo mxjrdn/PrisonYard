@@ -1,0 +1,74 @@
+.gradientText {
+	background: -webkit-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,.6));
+	 text-shadow: 0px 0px 16px rgba(0,0,0,.1);;
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+}
+#pageTitle {
+	background: #333;
+	position: relative;
+	height: 470px;
+	background: url(../images/billboard1.png);
+	background-size: cover;
+	background-position: center center;
+	overflow: hidden;
+}	
+#pageTitleWrapper {
+	position: relative;
+	text-align: center;
+	margin-top: 140px;
+}	
+h1 {
+	font-size: 7em;
+	text-align: center;
+	.gradientText;
+}
+#content {
+	display: block;
+	position: relative;
+	max-width: 980px;
+	margin: -190px auto 0;
+	padding: 50px;
+	background: rgba(50,50,50,.9);
+	box-shadow: 0px 0px 0px 6px rgba(0,0,0,.8);
+}
+#description {
+	max-width: 680px;
+	float: right;
+	margin: 40px;
+}
+#cost {
+	display: inline-block;
+	background: rgba(255,5,5,.5);
+	padding: 50px;
+	margin: 40px 40px 40px -80px;
+	text-align: center;
+	float: left;
+	box-shadow: 0px 0px 0px 6px rgba(0,0,0,.8);
+}	
+h1 {
+	font-size: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+span {
+	display: block;
+	font-size: 20px;
+	line-height: 20px;
+	margin: 0;
+}
+#video {
+	display: block;
+	position: relative;
+	margin: 40px 0;
+	box-shadow: 0px 0px 0px 6px rgba(0,0,0,.8);
+
+}
+.youtube.btn {
+	margin: -20px auto 0;
+	display: block;
+	width: 350px;
+	max-width: 350px;
+	text-align: center;
+}
+@media screen and (max-width: 1000px) {}
